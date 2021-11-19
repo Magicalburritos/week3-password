@@ -24,6 +24,19 @@ function confirmPrompt(passwordText) {
   }
 }
 
+//work horse
+
+function generatePassword() {
+  let finalpassword = '';
+  const passwordParams = {
+    charAmount: characterAmount(),
+    specialChar: confirmPrompt('would you like speical characters?'),
+    upperChar: confirmPrompt('would you like uppercase?'),
+    lowerChar: confirmPrompt('would you like lowercase?'),
+    numChar: confirmPrompt('would you like numbers?'),
+  };
+  
+
 // main function
 
 function writePassword() {
