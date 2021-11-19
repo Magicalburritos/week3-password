@@ -1,17 +1,22 @@
-// Assignment code here
+// global
+var generateBtn = document.querySelector('#generate');
 
+const upper = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+const lower = 'abcdefghijklmnopqrstuvwxyz';
+const num = '1234567890';
+const speical = `~!@#$%^&*()_+-=[]{};':",./<>?\|`;
 
-// Get references to the #generate element
-var generateBtn = document.querySelector("#generate");
+// helper function
 
-// Write password to the #password input
+// main function
+
 function writePassword() {
   var password = generatePassword();
-  var passwordText = document.querySelector("#password");
+  var passwordText = document.querySelector('#password');
 
   passwordText.value = password;
-
 }
 
-// Add event listener to generate button
-generateBtn.addEventListener("click", writePassword);
+//run
+
+generateBtn.addEventListener('click', writePassword);
