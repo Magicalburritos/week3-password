@@ -8,6 +8,22 @@ const speical = `~!@#$%^&*()_+-=[]{};':",./<>?\|`;
 
 // helper function
 
+function characterAmount() {
+  result = parseInt(window.prompt('Please input a character amount'));
+
+  if (result <= 7 || result >= 128) {
+    window.alert('Please input a number between 8 and 128');
+    characterAmount();
+  } else {
+    return result;
+  }
+}
+function confirmPrompt(passwordText) {
+  if (window.confirm(passwordText)) {
+    return true;
+  }
+}
+
 // main function
 
 function writePassword() {
