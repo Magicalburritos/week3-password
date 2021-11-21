@@ -4,7 +4,7 @@
  
  Created a generator that allows a user to enter between 8 and 128 charaters.
  Gives the user 4 options to choose from lower case, uppercase, numbers, and special charaters. 
- When choosing characters you are given at least one of each types chosen and random order of charaters. 
+ When chosen characters you are given at least one of each types chosen and random order of charaters. 
  
  
  https://magicalburritos.github.io/week3-password/index.html
